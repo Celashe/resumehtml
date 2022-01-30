@@ -1,0 +1,32 @@
+QUESTION 1: Let’s sabotage some of our code. Remove the opening curly bracket, {, from the function. 
+Refresh the page. Is the error message that is now produced useful? Why or why not?
+
+The error message produced is "Uncaught SyntaxError: Unexpected token 'var.' The error message that is produced is 
+helpful because it points out that there is something wrong with a variable.
+
+QUESTION 2: Put back in the curly bracket. Change the name of the function that you call 
+to have a different name then the actual function that we made. Click refresh. 
+Is there a new error message? Click the button to run the function. Is there a new error message now?
+Is the message helpful?
+
+The error message produced is "Uncaught SyntaxError: Uncaught ReferenceError: a is not defined
+at HTMLButtonElement.onclick." The error message is different from the first error message. The error message is
+helpful because it points out that the function being called does not have a function written for it.
+
+
+QUESTION 3: Fix the problem and this time change the name of your variable. 
+What error message is produced now? Is it helpful?
+The error message produced is Uncaught ReferenceError: x is not defined at myFunction (as3.html:14:45) 
+at HTMLButtonElement.onclick. The error message is helpful as it shows that the variable is not
+defined correctly.
+
+QUESTION 4: What would happen if we did not parse the variables? If you are not sure, 
+try running the equation without parsing the variables first. 
+What would happen if we would need to add the variables instead?
+
+If variables are not parsed, then arithmetic functions do not give the correct output. If variables need to be added,
+they would jsut be concatenated instead of being added together.
+
+QUESTION 5: What would be the difference if we used integer vs float, or vice versa?
+
+Integers store whole numbers while float stores decimals.

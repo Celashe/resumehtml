@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="as2style.css">
+<title>Resume</title>
+</head>
+<body>
+ 
+<div id="container">
+<!-- Border div -->
+<div id="header">
+<!-- Header Div -->
+	<h1>Resume</h1>
+	</div>
+<div id="main">
+<!-- Buffer Div -->
+	<div id="left">
+	<!-- Left Div -->
+		 <a href=work.html><br><br><br><br>Work Experience </a> <br><br><br><br>
+		 <a href=education.html>Education</a> <br><br><br><br>
+		 <a href=awards.html>Awards and Skills</a><br><br><br><br>
+		 <a href=salary.html>Salary Calculator</a><br><br><br>
+ 	</div>
+	<div id="center">
+	<!-- Center Div -->
+		<p> Please fill out the information below to see how much of a salary an hourly wage gives and if I would accept. <p>
+		<p>What is your hourly wage?</p> 
+		<input type="float" id="wage">
+		<p> What is your hours per week? </p>
+		<input type="float" id="hours">
+		<button type="button" onclick="myFunction()"> Submit </button>
+		<p id="result"> </p> <br>
+		<p id="statement"> </p>
+
+<script>
+function myFunction() {
+  let decision;
+  let wage = Number(document.getElementById("wage").value)*Number(document.getElementById("hours").value)
+  parseFloat(wage,hours);
+  document.getElementById("result").innerHTML = "$"+wage;
+  if (isNaN(wage)) {
+    decision = "Input is not a number.";
+  } 
+  else if (wage<20000) {
+  	decision ="This salary is too little.";
+    }
+    else if (wage<25000) {
+    decision="Let's negotiate.";
+    }
+  else {
+    decision= "This salary is good enough.";
+  }
+  document.getElementById("statement").innerHTML = decision;
+}
+</script>
+
+			
+</div>
+	<div id="right">
+	<!-- Right Div -->
+
+</div>
+</div>
+<div id="footer"> <!-- Footer Div -->
+<p><a href="mailto:ddmarquez@albany.edu">Email Me!</a></p> <!--Email Link -->
+</div>
+</div>
+
+</body>
+</html>
+
